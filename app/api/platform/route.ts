@@ -1,4 +1,4 @@
-import { env } from "cloudflare:workers";
+import { env } from "@/lib/env";
 import { getChatGPTUser } from "../../chatgpt-auth";
 import { database, seed, auditStatement } from "@/lib/store";
 import { allowedMetrics, scopeSites, visibleModules, ROLES, TENANTS, validPeriod, EVIDENCE, type Observation, type TenantId, type Metric } from "@/lib/metrics";

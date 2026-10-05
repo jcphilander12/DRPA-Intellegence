@@ -1,4 +1,4 @@
-import { env } from "cloudflare:workers";
+import { env } from "@/lib/env";
 import { calculate, fmt, rag, EVIDENCE, type Metric, type Observation } from "./metrics";
 import { governedExampleAnswer } from "./governed-sources";
 export type SourceRef={id:string;title:string;detail:string;displayDetail?:string;metric?:string};
